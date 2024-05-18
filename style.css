@@ -46,7 +46,6 @@ a {
 .card img {
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 100%;
     max-width: 40%;
     object-fit: cover;
 }
