@@ -1,0 +1,94 @@
+:root {
+    --clr-gray: rgb(51, 51, 51);
+    --clr-drk-white: rgb(250, 250, 250);
+    --clr-green: #14B8A6;
+    --clr-off-black: rgb(20, 20, 20);
+    --clr-blue: #4285f4;
+    --clr-cyan: #55C3FD;
+    --radius: 10px;
+}
+
+body {
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    background-image: url("img/gradient.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: var(--clr-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    font-size: 14px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.card {
+    background-color: whitesmoke;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: var(--radius);
+    padding: 20px;
+    box-shadow: 13px 38px 34px 5px rgba(130,128,130,0.71);
+}
+
+.card img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 40%;
+}
+
+.name {
+    font-weight: 700;
+    font-size: large;
+}
+
+.place {
+    color: var(--clr-green);
+    margin-top: 5px;
+}
+
+.place, #element {
+    font-weight: 600;
+}
+
+.bio {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+#element {
+    background-color: var(--clr-green);
+    color: var(--clr-gray);
+    width: 100px;
+    text-align: center;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--radius);
+    transition: all .3s;
+}
+
+#element:hover {
+    background-color: var(--clr-gray);
+    color: whitesmoke;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}

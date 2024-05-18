@@ -1,0 +1,126 @@
+body {  
+    font-family: "segoe ui";
+    color: white;
+}
+
+a {
+    color: lightgray;
+}
+
+.titolo {
+    background-color: white;
+    color: black;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-weight: bold;
+    font-size: xx-large;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+.titolo img {
+    width: 100px;
+}
+
+.titolo h3 {
+    margin-top: -10px;
+}
+
+.pianeti {
+    width: 100%;
+    height: 100%;
+    background-image: url("img/starspin2.jpg");
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.pianeta {
+    margin: 30px;
+}
+
+.pianeti img {
+    width: 300px;   
+}
+
+.pianeti img:hover {
+    animation: rotation 4s infinite linear;    /* rotazione */
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+.box {
+    width: 200px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    margin-top: 25px;
+    text-align: center;
+    background-color: #17171B;
+    color: white;
+    border-radius: 20px;
+    flex-direction: column;
+    padding-top: 15px;
+    font-size: large;
+    transition-duration: 0.4s;    /* cambio colore */
+    transition: transform 0.4s;    /* zoom */
+}
+
+.box:hover {
+    background-color: white;
+    color: black;
+    h6 {
+        color: gray;
+    }
+    transform: scale(1.05);    /* zoom */
+}
+
+h6 {
+    font-size: 15px;
+    font-weight: normal;
+    color: lightgray;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.text {
+    background-color: white;
+    color: black;
+    padding: 40px;
+    text-align: justify;
+    width: 70%;
+    margin: auto;
+}
+
+.tratteggio {
+    text-decoration: underline dashed;
+}
+
+.tratteggio:hover {
+    text-decoration: underline solid;
+}
+
+footer {
+    background-color: #17171B;
+    color: white;
+    text-align: center;
+    font-size: small;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 20px;
+}

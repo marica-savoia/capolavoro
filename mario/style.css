@@ -1,0 +1,153 @@
+:root {
+    --clr-red: #e00013;
+    --clr-dark: #b21623;
+}
+
+body {
+    background-color: white;
+    font-family: Calibri;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.header {
+    background-color: var(--clr-red);
+    width: 100%;
+    font-weight: bold;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+}
+
+.pill {
+    width: 130px;
+    margin-top: 0px;
+    margin-left: 15px;
+}
+
+.container {
+    display: flex;
+    margin-right: 50px;
+    right: 0px;
+}
+
+#google-icon {
+    font-size: 40px;
+    margin-left: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.elemento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.elemento span {
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    transition: text-decoration .3s;
+}
+
+.elemento span:hover {
+    text-decoration: underline;
+}
+
+.sidebar {
+    background-color: black;
+    width: 130px;
+    height: calc(100vh - 95px);
+        /* = il 100% dell'altezza della viewport (parte visibile finestra) */
+    color: white;
+    font-weight: bold;
+    left: 0;
+    top: 95px;
+    overflow-y: auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: fixed;
+}
+
+.oggetto {
+    width: 100%;
+    height: 130px;
+    background-color: var(--clr-red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 30% 30% 0;
+    flex-direction: column;
+    text-align: center;
+}
+
+.oggetto:hover{
+    background-color: var(--clr-dark);
+}
+
+.oggetto span {
+    margin-top: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#sidebar-icon {
+    font-size: 55px;
+}
+
+main {
+    top: 195px;
+    left: 130px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 130px;
+    margin-top: 90px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+main img {
+    width: 80%;
+    border-radius: 5px;
+}
+
+.box {
+    margin-top: 20px;
+    background-color: var(--clr-dark);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    width: 80%;
+    font-weight: bold;
+}
+
+.box img {
+    width: 200px;
+    display: block;
+    margin: auto;
+}
+
+h6 {
+    font-size: 15px;
+    margin-top: -10px;
+}
+
+.block {
+    width: 100px;
+    margin: 20px;
+}
