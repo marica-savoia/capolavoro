@@ -22,11 +22,20 @@ body {
     box-sizing: border-box;
 }
 
+.film {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    row-gap: 1rem;
+    column-gap: 0.5rem;
+    border: 1px solid red;
+    width: 90%;
+}
+
 .film img {
     height: 250px;
     margin-top: 20px;
     border-radius: 3px;
-
     transition: box-shadow .3s;
 
     transition: transform .2s;
