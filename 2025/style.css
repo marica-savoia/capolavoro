@@ -1,0 +1,240 @@
+:root {
+    --bg-color: #dfe0d9;
+    --medium: #f7f3f0;
+    --light: #fdfcfc;
+    --light-black: #242424;
+    --red: #a61e55;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'Inter', 'Arial', sans-serif;
+    color: var(--light-black);
+
+    a:hover {
+        transition: all .3s;
+    }
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 20px;
+
+    .bubble {
+        border-radius: 100px;
+        padding-top: 0.8em;
+        padding-bottom: 0.8em;
+        padding-left: 2em;
+        padding-right: 2em;
+        background-color: var(--light-black);
+        display: flex;
+        gap: 40px;
+        z-index: 1;
+    }
+
+    a {
+        color: gray;
+        font-family: Inter, Arial, sans-serif;
+        letter-spacing: -0.02em;
+        font-size: large;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: var(--medium);
+    }
+}
+
+main {
+    margin-top: 7.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+
+    h1 {
+    font-family: Inter;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    font-size: 50px;
+    }
+
+    p {
+        font-family: 'Inter';
+    }
+
+    .intro {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-top: -20px;
+
+        .text {
+            flex: 60%;
+        }
+
+        img {
+            height: 30%;
+        }
+    }
+
+    hr {
+        margin-top: 1em;
+        margin-bottom: 2em;
+        color: var(--light-black);
+        border: 1px solid;
+    }
+
+    #storia {
+        p {
+            margin-top: -15px;
+            margin-bottom: 30px;
+        }
+
+        .special {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+            margin-top: -15px;
+            margin-bottom: 30px;
+
+            p {
+                margin-top: 0px;
+                margin-bottom: 0px;
+            }
+
+            img {
+                width: 350px;
+            }
+
+            .arafat {
+                width: 200px;
+            }
+        }
+    }
+
+    #interviste {
+        img {
+            width: 10em;
+        }
+
+        .no-effects {
+            background-color: var(--medium);
+            text-decoration: none;
+            display: block;
+            border: none;
+        }
+
+        .box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 0em;
+            margin-top: 2em;
+            margin-bottom: 2em;
+            padding-left: 0em;
+            padding-right: 0em;
+        }
+
+        .figura {
+            border: 1px solid var(--light-black);
+            display: flex;
+            flex-direction: column;
+            padding-left: 0.5em;
+            padding-right: 0.5em;
+            justify-content: flex-start;
+            align-items: center;
+            min-height: 800px;
+            flex: 10em;
+        }
+
+        h3 {
+            letter-spacing: -0.02em;
+        }
+
+        .bio {
+            width: 90%;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            text-align: justify;
+        }
+
+        .meir {
+            border-left: 0px;
+            border-right: 0px;
+        }
+
+        a {
+            color: var(--medium);
+            margin-bottom: 0px;
+            background-color: var(--light-black);
+        }
+
+        a:hover {
+            color: var(--light-black);
+            background-color: var(--light);
+        }
+    }
+}
+
+    #link {
+        a {
+            font-weight: bold;
+            color: var(--light-black);
+        }
+
+        a:hover {
+            color: var(--light);
+        }
+    }
+
+
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 20px;
+
+    .bubble {
+        border-radius: 100px;
+        padding-top: 0.8em;
+        padding-bottom: 0.8em;
+        padding-left: 2em;
+        padding-right: 2em;
+        background-color: var(--light-black);
+        display: flex;
+        gap: 40px;
+    }
+
+    .testo {
+        color: gray;
+        font-family: Inter, Arial, sans-serif;
+        letter-spacing: -0.02em;
+        font-size: medium;
+        text-decoration: none;
+    }
+
+    .testo:hover {
+        color: var(--medium);
+        transition: all .3s;
+    }
+}
